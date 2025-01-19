@@ -5,7 +5,7 @@
 <meta content="chrome=1" http-equiv="X-UA-Compatible"/>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
-<title>01-getting-started-with-tableau slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
+<title>02-data-exploration-with-tableau slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
   import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
 </script>
@@ -7441,7 +7441,7 @@ main {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Visualization-with-Modern-Data-Science">Visualization with Modern Data Science<a class="anchor-link" href="#Visualization-with-Modern-Data-Science">¶</a></h1><blockquote>
-<p>Getting Started with Tableau</p>
+<p>Data Exploration with Tableau</p>
 </blockquote>
 <p>Yao-Jen Kuo <a href="mailto:yaojenkuo@ntu.edu.tw">yaojenkuo@ntu.edu.tw</a> from <a href="https://www.datainpoint.com">DATAINPOINT</a></p>
 </div>
@@ -7454,7 +7454,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Getting-Tableau-Desktop-Public-Edition">Getting Tableau Desktop Public Edition<a class="anchor-link" href="#Getting-Tableau-Desktop-Public-Edition">¶</a></h2>
+<h2 id="Creating-Basic-Plots">Creating Basic Plots<a class="anchor-link" href="#Creating-Basic-Plots">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7465,37 +7465,13 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="What-does-Tableau-mean">What does Tableau mean<a class="anchor-link" href="#What-does-Tableau-mean">¶</a></h2><p>Tableau comes from the old French for "painting, or painted target." We usually use tableau to describe a vivid living scene.</p>
-<p><img alt="Imgur" src="https://i.imgur.com/DcuAxgz.png?1"/></p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Download-Tableau-Desktop-Public-Edition">Download Tableau Desktop Public Edition<a class="anchor-link" href="#Download-Tableau-Desktop-Public-Edition">¶</a></h2><p><a href="https://www.tableau.com/products/public/download">https://www.tableau.com/products/public/download</a></p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Tableau-Start-page:--Connect">Tableau Start page:  Connect<a class="anchor-link" href="#Tableau-Start-page:--Connect">¶</a></h2><ul>
-<li>You use this section when you want to start a new data connection in your Tableau workbook.</li>
-<li>Tableau Desktop has two editions<ul>
-<li>Tableau Desktop Public Edition is for connections to file‐based data sources and limited online sources.</li>
-<li>Tableau Desktop Professional Edition allows you to go beyond files and connect to databases hosted on servers.</li>
-</ul>
-</li>
-<li>Tap Tableau &gt; About to get your edition information</li>
+<h2 id="Each-plot-has-its-own-purpose">Each plot has its own purpose<a class="anchor-link" href="#Each-plot-has-its-own-purpose">¶</a></h2><ul>
+<li>To explore rankings.</li>
+<li>To explore correlations.</li>
+<li>To explore distributions.</li>
+<li>To explore trends.</li>
+<li>To explore proportions.</li>
+<li>To explore values on map.</li>
 </ul>
 </div>
 </div>
@@ -7507,7 +7483,11 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Tableau-Start-page:--Open">Tableau Start page:  Open<a class="anchor-link" href="#Tableau-Start-page:--Open">¶</a></h2><p>You use this section to open and continue working on an existing Tableau workbook. The existing workbook can be one that you’ve created or one of the samples that Tableau Software provides for training purposes.</p>
+<h2 id="Using-bar-to-explore-rankings">Using bar to explore rankings<a class="anchor-link" href="#Using-bar-to-explore-rankings">¶</a></h2><ul>
+<li>Dragging values onto Columns.</li>
+<li>Dragging categories onto Rows.</li>
+<li>Click sorted descending.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7518,7 +7498,100 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Tableau-Start-page:--Discover">Tableau Start page:  Discover<a class="anchor-link" href="#Tableau-Start-page:--Discover">¶</a></h2><p>This section gives you easy access to training resources as well as news about Tableau.</p>
+<h2 id="Showing-only-top-n-results">Showing only top <code>n</code> results<a class="anchor-link" href="#Showing-only-top-n-results">¶</a></h2><ul>
+<li>Dragging categories onto Filters.</li>
+<li>Click Top and input condition.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Using-scatter-plot-to-explore-correlations">Using scatter plot to explore correlations<a class="anchor-link" href="#Using-scatter-plot-to-explore-correlations">¶</a></h2><ul>
+<li>Dragging value onto Columns.</li>
+<li>Dragging value onto Rows.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Tableau-uses-SUM()-on-measurements-by-default">Tableau uses <code>SUM()</code> on measurements by default<a class="anchor-link" href="#Tableau-uses-SUM()-on-measurements-by-default">¶</a></h2><ul>
+<li>Switch to <code>Dimension</code> from <code>Measure</code> for both axes.</li>
+<li>Dragging a category onto Label.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Using-histogram-to-explore-distributions">Using histogram to explore distributions<a class="anchor-link" href="#Using-histogram-to-explore-distributions">¶</a></h2><ul>
+<li>Dragging value onto Columns.</li>
+<li>Click Show Me then click <strong>histogram</strong>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Using-line-to-explore-trends">Using line to explore trends<a class="anchor-link" href="#Using-line-to-explore-trends">¶</a></h2><ul>
+<li>Dragging date/time/datetime onto Columns.</li>
+<li>Dragging value onto Rows.</li>
+<li>Add a Quick Table Calculation &gt; Running Total.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Using-treemap-to-explore-proportions">Using treemap to explore proportions<a class="anchor-link" href="#Using-treemap-to-explore-proportions">¶</a></h2><ul>
+<li>Dragging category onto Columns.</li>
+<li>Dragging value onto Rows.</li>
+<li>Click Show Me then click <strong>treemaps</strong>.</li>
+<li>Add a Quick Table Calculation &gt; Percent of Total.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Using-map-to-explore-values-on-map">Using map to explore values on map<a class="anchor-link" href="#Using-map-to-explore-values-on-map">¶</a></h2><ul>
+<li>Add geographical shapefile(.shp) as new connection: <a href="https://data.gov.tw/dataset/7441">鄉鎮市區界線(TWD97經緯度) | 我國各鄉(鎮、市、區)行政區域界線圖資</a></li>
+<li>Join shapefile with geographic columns.</li>
+<li>Dragging geometry onto worksheet.</li>
+<li>Dragging value onto Color.</li>
+<li>Dragging category onto Detail.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7529,7 +7602,7 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Interacting-with-Data-in-Tableau">Interacting with Data in Tableau<a class="anchor-link" href="#Interacting-with-Data-in-Tableau">¶</a></h2>
+<h2 id="Other-plots">Other plots<a class="anchor-link" href="#Other-plots">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7540,7 +7613,14 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Downloading-data-from:">Downloading data from:<a class="anchor-link" href="#Downloading-data-from:">¶</a></h2><p><a href="https://taiwan-election-2024.s3.ap-northeast-1.amazonaws.com/taiwan_election_2024.zip">taiwan_election_2024.zip</a></p>
+<h2 id="There-are-still-plenty-of-plots-that-is-often-used-for-certain-purposes">There are still plenty of plots that is often used for certain purposes<a class="anchor-link" href="#There-are-still-plenty-of-plots-that-is-often-used-for-certain-purposes">¶</a></h2><ul>
+<li>Area works like line, but involves the information about combinations.</li>
+<li>Discrete works like line/area, but is designed for date variables.</li>
+<li>Bullet works like bar, but involves the comparison between 2 measures.</li>
+<li>Dual combination integrates a bar and a line with dual axes.</li>
+<li>Packed bubble works like bar, but involves a hierarchy feature and shows measure with the size of bubbles.</li>
+<li>Text tables display values as numbers in a table(also called cross-tabs or pivot tables.)</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7551,7 +7631,12 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Data-source:-Central-Election-Commission">Data source: Central Election Commission<a class="anchor-link" href="#Data-source:-Central-Election-Commission">¶</a></h2><p><a href="https://db.cec.gov.tw/ElecTable/Election">https://db.cec.gov.tw/ElecTable/Election</a></p>
+<h2 id="Using-area-to-explore-trends-and-combination-at-the-same-time">Using area to explore trends and combination at the same time<a class="anchor-link" href="#Using-area-to-explore-trends-and-combination-at-the-same-time">¶</a></h2><ul>
+<li>Dragging date/time/datetime onto Columns.</li>
+<li>Dragging value onto Rows.</li>
+<li>Dragging category onto Filter and Color.</li>
+<li>Click Show Me then click <strong>area charts(continuous)</strong>.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7562,10 +7647,265 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Download-a-text-editor-to-preview-your-text-file-data">Download a text editor to preview your text file data<a class="anchor-link" href="#Download-a-text-editor-to-preview-your-text-file-data">¶</a></h2><ul>
-<li><a href="https://code.visualstudio.com">Visual Studio Code</a></li>
-<li><a href="https://atom.io">Atom</a></li>
-<li><a href="https://notepad-plus-plus.org/">Notepad++</a></li>
+<h2 id="Using-dual-axis-to-explore-trends-with-2-measures">Using dual axis to explore trends with 2 measures<a class="anchor-link" href="#Using-dual-axis-to-explore-trends-with-2-measures">¶</a></h2><ul>
+<li>Dragging date/time/datetime onto Columns.</li>
+<li>Dragging <strong>2 values</strong> onto Rows.</li>
+<li>Click dual axis on either of the <strong>2 values</strong>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Using-bullet-to-explore-the-comparison-between-2-measures">Using bullet to explore the comparison between 2 measures<a class="anchor-link" href="#Using-bullet-to-explore-the-comparison-between-2-measures">¶</a></h2><ul>
+<li>Dragging category onto Columns.</li>
+<li>Dragging <strong>2 values</strong> onto Rows.</li>
+<li>Click Show Me then click <strong>bullet graph</strong>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Using-packed-bubble-to-explore-ranking">Using packed bubble to explore ranking<a class="anchor-link" href="#Using-packed-bubble-to-explore-ranking">¶</a></h2><ul>
+<li>Create a <strong>hierarchy</strong>.</li>
+<li>Dragging <strong>hierarchy</strong> onto Columns.</li>
+<li>Dragging value onto Rows.</li>
+<li>Click Show Me then click <strong>packed bubbles</strong>.</li>
+<li>Drilling down by clicking the plus sign next to <strong>hierarchy</strong>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Using-text-tables-to-explore-summarized-numbers-in-a-table">Using text tables to explore summarized numbers in a table<a class="anchor-link" href="#Using-text-tables-to-explore-summarized-numbers-in-a-table">¶</a></h2><ul>
+<li>Dragging value onto Columns.</li>
+<li>Dragging category onto Rows.</li>
+<li>Click Show Me then click <strong>text table</strong>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Creating-Calculated-Fields">Creating Calculated Fields<a class="anchor-link" href="#Creating-Calculated-Fields">¶</a></h2>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="What-are-calculated-fields">What are calculated fields<a class="anchor-link" href="#What-are-calculated-fields">¶</a></h2><p>We can create new fields in Tableau using calculations and then save them as part of the data source. These fields are called calculated fields.</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Types-of-calculations">Types of calculations<a class="anchor-link" href="#Types-of-calculations">¶</a></h2><ul>
+<li>Basic calculations.</li>
+<li>Using functions.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Basic-calculations-allow-us-to-transform-values-or-members-at">Basic calculations allow us to transform values or members at<a class="anchor-link" href="#Basic-calculations-allow-us-to-transform-values-or-members-at">¶</a></h2><ul>
+<li>A row-level calculation.</li>
+<li>An aggregate calculation.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="A-row-level-calculation:-Voter-Turnout">A row-level calculation: <code>Voter Turnout</code><a class="anchor-link" href="#A-row-level-calculation:-Voter-Turnout">¶</a></h2><ul>
+<li>Filter data source to a certain election type.</li>
+<li>Analysis &gt; Create Calculated Field.</li>
+<li>Enter a name for the calculated field with <code>Voter Turnout</code> and a formula.</li>
+<li>Edit format to display percentage.</li>
+</ul>
+\begin{equation}
+\text{Voter Turnout} = \frac{\text{Effective Votes} + \text{Wasted Votes}}{\text{Issued Votes} + \text{Remained Votes}}
+\end{equation}
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="An-aggregate-calculation:-Aggregate-Voter-Turnout">An aggregate calculation: <code>Aggregate Voter Turnout</code><a class="anchor-link" href="#An-aggregate-calculation:-Aggregate-Voter-Turnout">¶</a></h2><ul>
+<li>Analysis &gt; Create Calculated Field.</li>
+<li>Enter a name for the calculated field with <code>Aggregate Voter Turnout</code> and a formula.</li>
+<li>Edit format to display percentage.</li>
+</ul>
+\begin{equation}
+\text{Voter Turnout} = \frac{\text{SUM} \big( \text{Effective Votes} + \text{Wasted Votes} \big)}{\text{SUM} \big( \text{Issued Votes} + \text{Remained Votes} \big)}
+\end{equation}
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="The-building-blocks-of-writing-formula-of-calculated-fields">The building blocks of writing formula of calculated fields<a class="anchor-link" href="#The-building-blocks-of-writing-formula-of-calculated-fields">¶</a></h2><ul>
+<li>Functions.</li>
+<li>Fields.</li>
+<li>Operators.</li>
+<li>Constants.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Tableau-supports-many-functions-including">Tableau supports many functions including<a class="anchor-link" href="#Tableau-supports-many-functions-including">¶</a></h2><ul>
+<li>Universal Functions<ul>
+<li><a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_number.htm">Number Functions</a></li>
+<li><a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_string.htm">String Functions</a></li>
+<li><a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_date.htm">Date Functions</a></li>
+<li><a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_typeconversion.htm">Type Conversion</a></li>
+<li><a href="https://help.tableau.com/current/pro/desktop/en-us/functions_functions_logical.htm">Logical Functions</a></li>
+<li>...etc.</li>
+</ul>
+</li>
+<li><a href="https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_aggregate_create.htm">Aggregate Functions</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Racing-bar-chart">Racing bar chart<a class="anchor-link" href="#Racing-bar-chart">¶</a></h2>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Build-a-racing-bar-chart-with-functions">Build a racing bar chart with functions<a class="anchor-link" href="#Build-a-racing-bar-chart-with-functions">¶</a></h2><ul>
+<li>Create a calculated field <code>Running Sum Votes</code> with following functions.</li>
+</ul>
+\begin{equation}
+\text{Running Sum Votes} = \text{RUNNING_SUM} \big( \text{SUM} \big( \text{Votes} \big) \big)
+\end{equation}
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Build-a-racing-bar-chart-with-functions(cont'd)">Build a racing bar chart with functions(cont'd)<a class="anchor-link" href="#Build-a-racing-bar-chart-with-functions(cont'd)">¶</a></h2><ul>
+<li>Validate <code>Running Sum Votes</code> is calculated by <code>Vote Tallied At</code> and by candidates.</li>
+<li>Dragging <code>Running Sum Votes</code> onto Columns.</li>
+<li>Dragging <code>Number</code> and <code>Name</code> onto Rows.</li>
+<li>Dragging <code>Name</code> onto Color and Label.</li>
+<li>Dragging <code>Vote Tallied At</code> onto Pages card.</li>
+<li>Adjust <code>Vote Tallied At</code> to minutes/seconds.</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="The-Taiwan-Election-2024-Dashboard">The Taiwan Election 2024 Dashboard<a class="anchor-link" href="#The-Taiwan-Election-2024-Dashboard">¶</a></h2>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Taiwan-Election-2024-Dashboard">Taiwan Election 2024 Dashboard<a class="anchor-link" href="#Taiwan-Election-2024-Dashboard">¶</a></h2><p>Reference: <a href="https://db.cec.gov.tw/Visual">https://db.cec.gov.tw/Visual</a></p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Use-different-plots-to-assemble-a-dashboard">Use different plots to assemble a dashboard<a class="anchor-link" href="#Use-different-plots-to-assemble-a-dashboard">¶</a></h2><ul>
+<li>Text table.</li>
+<li>Bar plot.</li>
+<li>Line plot.</li>
+<li>Choropleth Map.</li>
 <li>...etc.</li>
 </ul>
 </div>
@@ -7578,485 +7918,14 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="CSV-is-short-for-comma-separated-values">CSV is short for comma-separated values<a class="anchor-link" href="#CSV-is-short-for-comma-separated-values">¶</a></h2><blockquote>
-<p>A comma-separated values (CSV) file is a delimited text file that uses a comma to separate values. Each line of the file is a data record. Each record consists of one or more fields, separated by commas.</p>
-</blockquote>
-<p>Source: <a href="https://en.wikipedia.org/wiki/Comma-separated_values">https://en.wikipedia.org/wiki/Comma-separated_values</a></p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Understanding-these-CSV-files">Understanding these CSV files<a class="anchor-link" href="#Understanding-these-CSV-files">¶</a></h2>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">table_name</span> <span class="o">=</span> <span class="s2">"aboriginal_legislators"</span>
-<span class="n">file_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"data/</span><span class="si">{</span><span class="n">table_name</span><span class="si">}</span><span class="s2">.csv"</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(338105, 7)
-Index(['id', 'district_id', 'candidate_id', 'number', 'votes',
-       'election_type_id', 'village_id'],
-      dtype='object')
-   id  district_id  candidate_id  number  votes  election_type_id  village_id
-0   1        15035           317       1      2                 3           1
-1   2        15036           317       1      0                 3           1
-2   3        15037           317       1      0                 3           2
-3   4        15038           317       1      1                 3           3
-4   5        15039           317       1      0                 3           4
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">table_name</span> <span class="o">=</span> <span class="s2">"candidates"</span>
-<span class="n">file_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"data/</span><span class="si">{</span><span class="n">table_name</span><span class="si">}</span><span class="s2">.csv"</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(331, 4)
-Index(['id', 'name', 'party_id', 'election_type_id'], dtype='object')
-   id name  party_id  election_type_id
-0   1  丁學忠         1                 2
-1   2  傅崐萁         1                 2
-2   3  吳政杰         1                 2
-3   4  呂玉玲         1                 2
-4   5  周宏昌         1                 2
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">table_name</span> <span class="o">=</span> <span class="s2">"districts"</span>
-<span class="n">file_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"data/</span><span class="si">{</span><span class="n">table_name</span><span class="si">}</span><span class="s2">.csv"</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(17795, 5)
-Index(['id', 'county', 'town', 'polling_place', 'vote_tallied_at'], dtype='object')
-   id county town  polling_place      vote_tallied_at
-0   1    南投縣  中寮鄉            191  2024-01-13 17:36:44
-1   2    南投縣  中寮鄉            192  2024-01-13 17:18:56
-2   3    南投縣  中寮鄉            193  2024-01-13 17:04:33
-3   4    南投縣  中寮鄉            194  2024-01-13 17:44:08
-4   5    南投縣  中寮鄉            195  2024-01-13 17:57:21
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">table_name</span> <span class="o">=</span> <span class="s2">"election_types"</span>
-<span class="n">file_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"data/</span><span class="si">{</span><span class="n">table_name</span><span class="si">}</span><span class="s2">.csv"</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(5, 2)
-Index(['id', 'election_type'], dtype='object')
-   id election_type
-0   1        總統/副總統
-1   2          區域立委
-2   3          山地立委
-3   4          平地立委
-4   5         不分區立委
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">table_name</span> <span class="o">=</span> <span class="s2">"parties"</span>
-<span class="n">file_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"data/</span><span class="si">{</span><span class="n">table_name</span><span class="si">}</span><span class="s2">.csv"</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(35, 2)
-Index(['id', 'name'], dtype='object')
-   id     name
-0   1    中國國民黨
-1   2    中華婦女黨
-2   3  中華愛國同心黨
-3   4  中華文化共和黨
-4   5  中華統一促進黨
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">table_name</span> <span class="o">=</span> <span class="s2">"party_legislators"</span>
-<span class="n">file_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"data/</span><span class="si">{</span><span class="n">table_name</span><span class="si">}</span><span class="s2">.csv"</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(284720, 7)
-Index(['id', 'district_id', 'party_id', 'number', 'votes', 'election_type_id',
-       'village_id'],
-      dtype='object')
-   id  district_id  party_id  number  votes  election_type_id  village_id
-0   1        15035        25       1      1                 5           1
-1   2        15036        25       1      4                 5           1
-2   3        15037        25       1     11                 5           2
-3   4        15038        25       1      5                 5           3
-4   5        15039        25       1      9                 5           4
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">table_name</span> <span class="o">=</span> <span class="s2">"polling_places"</span>
-<span class="n">file_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"data/</span><span class="si">{</span><span class="n">table_name</span><span class="si">}</span><span class="s2">.csv"</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(88975, 8)
-Index(['id', 'district_id', 'polling_place', 'effective_votes', 'wasted_votes',
-       'issued_votes', 'remained_votes', 'election_type_id'],
-      dtype='object')
-   id  district_id  polling_place  effective_votes  wasted_votes  \
-0   1        15035              1              616             1   
-1   2        15036              2              536             6   
-2   3        15037              3              954             9   
-3   4        15038              4              688             5   
-4   5        15039              5              860             5   
-
-   issued_votes  remained_votes  election_type_id  
-0           617             423                 1  
-1           542             366                 1  
-2           963             770                 1  
-3           693             603                 1  
-4           865             751                 1  
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">table_name</span> <span class="o">=</span> <span class="s2">"presidents"</span>
-<span class="n">file_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"data/</span><span class="si">{</span><span class="n">table_name</span><span class="si">}</span><span class="s2">.csv"</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(53385, 7)
-Index(['id', 'number', 'district_id', 'candidate_id', 'votes',
-       'election_type_id', 'village_id'],
-      dtype='object')
-   id  number  district_id  candidate_id  votes  election_type_id  village_id
-0   1       1        15035           330    146                 1           1
-1   2       1        15036           330    128                 1           1
-2   3       1        15037           330    239                 1           2
-3   4       1        15038           330    208                 1           3
-4   5       1        15039           330    210                 1           4
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">table_name</span> <span class="o">=</span> <span class="s2">"regional_legislators"</span>
-<span class="n">file_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"data/</span><span class="si">{</span><span class="n">table_name</span><span class="si">}</span><span class="s2">.csv"</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(77032, 8)
-Index(['id', 'district_id', 'candidate_id', 'number', 'votes',
-       'legislator_region', 'election_type_id', 'village_id'],
-      dtype='object')
-   id  district_id  candidate_id  number  votes legislator_region  \
-0   1        15035           181       1    113            連江縣選舉區   
-1   2        15036           181       1    125            連江縣選舉區   
-2   3        15037           181       1    217            連江縣選舉區   
-3   4        15038           181       1    170            連江縣選舉區   
-4   5        15039           181       1    251            連江縣選舉區   
-
-   election_type_id  village_id  
-0                 2           1  
-1                 2           1  
-2                 2           2  
-3                 2           3  
-4                 2           4  
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">table_name</span> <span class="o">=</span> <span class="s2">"villages"</span>
-<span class="n">file_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"data/</span><span class="si">{</span><span class="n">table_name</span><span class="si">}</span><span class="s2">.csv"</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(5227, 2)
-Index(['id', 'name'], dtype='object')
-   id             name
-0   1              介壽村
-1   2          復興村、福沃村
-2   3          清水村、珠螺村
-3   4  仁愛村、津沙村、馬祖村、四維村
-4   5          塘岐村、后沃村
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Connecting-to-.csv-file-in-Tableau">Connecting to <code>.csv</code> file in Tableau<a class="anchor-link" href="#Connecting-to-.csv-file-in-Tableau">¶</a></h2><p>Tableau Start page &gt; Connect &gt; To a File &gt; Text file.</p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Understanding-Tableau-Worksheets:-the-place-where-you-create-the-visualizations-that-you'll-use-in-dashboards">Understanding Tableau Worksheets: the place where you create the visualizations that you'll use in dashboards<a class="anchor-link" href="#Understanding-Tableau-Worksheets:-the-place-where-you-create-the-visualizations-that-you'll-use-in-dashboards">¶</a></h2><p><img alt="Imgur" src="https://i.imgur.com/Lsfhpsi.png?1"/></p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="A-big-picture-of-our-fields">A big picture of our fields<a class="anchor-link" href="#A-big-picture-of-our-fields">¶</a></h2><p>Each of them has an icon to the left of the field name that indicates the type of data contained in the field.</p>
-<ol>
-<li>Dimensions: categorical, discrete.</li>
-<li>Measures: numerical, continuous.</li>
-</ol>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Interacting-with-imported-data">Interacting with imported data<a class="anchor-link" href="#Interacting-with-imported-data">¶</a></h2><ul>
-<li>Adding filters.</li>
-<li>Calculated fields.</li>
+<h2 id="Use-containers-and-blanks-to-arrange-our-dashboard-layout">Use containers and blanks to arrange our dashboard layout<a class="anchor-link" href="#Use-containers-and-blanks-to-arrange-our-dashboard-layout">¶</a></h2><ul>
+<li>Choose an appropriate resolution.</li>
+<li>Containers.<ul>
+<li>Horizontal.</li>
+<li>Vertical.</li>
+</ul>
+</li>
+<li>Blanks.</li>
 </ul>
 </div>
 </div>
@@ -8068,49 +7937,10 @@ Index(['id', 'name'], dtype='object')
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Adding-filters-from-data-source">Adding filters from data source<a class="anchor-link" href="#Adding-filters-from-data-source">¶</a></h2><p>If you don't need to base your analysis on the entire data set, you can add a filter to the extract so that Tableau can use the specified subset of the data (which may also improve performance).</p>
-<p><img alt="Imgur" src="https://i.imgur.com/TeR5Q2A.png?2"/></p>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Adding-filters-in-Tableau-Worksheets">Adding filters in Tableau Worksheets<a class="anchor-link" href="#Adding-filters-in-Tableau-Worksheets">¶</a></h2><ul>
-<li>Dragging and dropping fields onto <strong>Filters</strong>.</li>
-<li>Adding some filters on different fields.</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Calculated-fields">Calculated fields<a class="anchor-link" href="#Calculated-fields">¶</a></h2><ul>
-<li>Analysis &gt; Create Calculated Field...</li>
-</ul>
-</div>
-</div>
-</div>
-</div></section><section>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Multiple-files">Multiple files<a class="anchor-link" href="#Multiple-files">¶</a></h2><ul>
-<li>Unions: Unions allow you to combine data from similar tables or datasets vertically, effectively lengthening the data.</li>
-<li>Relationships: Tableau's relationship feature allows users to connect multiple tables based on common fields. This method is particularly useful when dealing with data from different sources or databases. By establishing relationships between tables, you can prevent unnecessary data duplication, ensuring a more efficient and manageable workbook.</li>
-<li>Joins: Joins are a common operation in databases and data analysis, and Tableau supports various types of joins. When using joins, multiple tables are combined horizontally into a single, unified dataset based on a common field.</li>
+<h2 id="Final-steps">Final steps<a class="anchor-link" href="#Final-steps">¶</a></h2><ul>
+<li>Dragging in sheets to make a good-looking dashboard.</li>
+<li>Use Filter to add interactivity.</li>
+<li>Save workbook to Tableau Public.</li>
 </ul>
 </div>
 </div>
